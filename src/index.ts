@@ -27,6 +27,7 @@ export function exportJSON(data: Json, filename: string) {
   link.href = 'data:application/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(data));
   link.click();
   link.remove();
+  return data;
 }
 
 /*

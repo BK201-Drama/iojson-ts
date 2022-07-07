@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "test": "jest --config jestconfig.json",
+    "test": "tslint -p tsconfig.json",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
     "build": "tsc",
     "lint": "tslint -p tsconfig.json",
@@ -15,12 +15,14 @@
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags"
   },
-  "keywords": ["export", "import"],
+  "keywords": [
+    "export",
+    "import"
+  ],
   "author": "BK201_1393",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^28.1.4",
-    "jest": "^28.1.2",
     "prettier": "^2.7.1",
     "ts-jest": "^28.0.5",
     "tslint": "^6.1.3",
